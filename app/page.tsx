@@ -204,13 +204,17 @@ export default function Home() {
         {approveError && (
           <Alert variant="destructive">
             <AlertTitle>Error</AlertTitle>
-            <AlertDescription>{approveError.message}</AlertDescription>
+            <AlertDescription className="break-all">
+              {approveError.message}
+            </AlertDescription>
           </Alert>
         )}
         {sellError && (
           <Alert variant="destructive">
             <AlertTitle>Error</AlertTitle>
-            <AlertDescription>{sellError.message}</AlertDescription>
+            <AlertDescription className="break-all">
+              {sellError.message}
+            </AlertDescription>
           </Alert>
         )}
       </div>
