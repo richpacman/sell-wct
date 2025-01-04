@@ -82,8 +82,8 @@ export default function Home() {
   const { writeContract: approve, error: approveError } = useWriteContract();
   const { writeContract: sell, error: sellError } = useWriteContract();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center py-10 px-4 md:px-0">
-      <div className="space-y-4">
+    <main className="flex min-h-screen flex-col items-center justify-center py-10 px-4 md:px-0 border">
+      <div className="space-y-4 max-w-2xl">
         <div className="flex justify-center">
           <ConnectButton />
         </div>
@@ -91,11 +91,12 @@ export default function Home() {
           Formula stake weight: Stake weight = (total token * durasi lock) / 209
           (209 minggu)
         </p>
-        <Alert variant="destructive" className="max-w-3xl">
+        <Alert variant="destructive">
           <AlertTitle className="font-bold">Tolong di perhatikan</AlertTitle>
-          <AlertDescription className="break-all">
-            Paste address pembeli yang akan menerima WCT sebelum menekan tombol
-            approve atau sell.
+          <AlertDescription>
+            Konek wallet anda terlebih dahulu, pastikan pembeli sudah stake WCT
+            dan paste address pembeli dahulu sebelum menekan tombol approve atau
+            sell.
           </AlertDescription>
         </Alert>
         <div className="grid md:grid-cols-2 gap-4">
@@ -201,19 +202,15 @@ export default function Home() {
         </div>
 
         {approveError && (
-          <Alert variant="destructive" className="max-w-3xl">
+          <Alert variant="destructive">
             <AlertTitle>Error</AlertTitle>
-            <AlertDescription className="break-all">
-              {approveError.message}
-            </AlertDescription>
+            <AlertDescription>{approveError.message}</AlertDescription>
           </Alert>
         )}
         {sellError && (
-          <Alert variant="destructive" className="max-w-3xl">
+          <Alert variant="destructive">
             <AlertTitle>Error</AlertTitle>
-            <AlertDescription className="break-all">
-              {sellError.message}
-            </AlertDescription>
+            <AlertDescription>{sellError.message}</AlertDescription>
           </Alert>
         )}
       </div>
