@@ -81,9 +81,6 @@ export default function Home() {
 
   const { writeContract: approve, error: approveError } = useWriteContract();
   const { writeContract: sell, error: sellError } = useWriteContract();
-
-  console.log(!buyerAddress);
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center py-10 px-4 md:px-0">
       <div className="space-y-4">
