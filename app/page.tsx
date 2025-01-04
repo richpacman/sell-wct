@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { erc20Abi, formatUnits, parseUnits } from 'viem';
 import { useAccount, useReadContract, useWriteContract } from 'wagmi';
 import {
