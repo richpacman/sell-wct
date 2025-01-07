@@ -23,7 +23,7 @@ Silahkan di pilih mau pakai website [sell-wct](sell-wct.vercel.app) yang lebih m
 
 ### Bagian Kirim
 1. Pergi ke kontrak staking WCT `https://optimistic.etherscan.io/address/0x521b4c065bbdbe3e20b3727340730936912dfa46`
-2. Konek wallet setelah itu cari fungsi `4. depositFor(0x2f4f21e2)`
+2. Konek wallet setelah itu cari fungsi `depositFor(0x2f4f21e2)`
 3. Paste address penerima ke dalam kolom `for_(address)`
 4. Masukkan jumlah token yang akan di kirim/sell dalam format wei ke dalam kolom `amount(uint256)`
 5. Write/eksekusi transaksi
