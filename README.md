@@ -28,4 +28,4 @@ Silahkan di pilih mau pakai website [sell-wct](sell-wct.vercel.app) yang lebih m
 4. Masukkan jumlah token yang akan di kirim/sell dalam format wei ke dalam kolom `amount(uint256)`
 5. Write/eksekusi transaksi
 
-**Kalau masih bingung saya sarankan menggunakan website saja. Kode open source, silahkan tanya AI atau teman anda yang mengerti koding jika anda tidak yakin.**
+**Kalau masih bingung saya sarankan menggunakan website saja, kodenya open source, silahkan tanya AI atau teman anda yang mengerti koding jika anda tidak yakin.**
