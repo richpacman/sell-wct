@@ -15,14 +15,14 @@ Silahkan di pilih mau pakai website [sell-wct](sell-wct.vercel.app) yang lebih m
 ## Interaksi langsung dengan kontrak
 
 ### Bagian Approve
-1. Pergi ke kontrak token [WCT](https://optimistic.etherscan.io/token/0xef4461891dfb3ac8572ccf7c794664a8dd927945#writeProxyContract#F1)
+1. Pergi ke kontrak token `https://optimistic.etherscan.io/token/0xef4461891dfb3ac8572ccf7c794664a8dd927945`
 2. Konek wallet setelah itu cari fungsi `approve(0x095ea7b3)`
 3. Paste kontrak staking WCT berikut `0x521b4c065bbdbe3e20b3727340730936912dfa46` ke dalam kolom ``spender(address)``
 4. Masukkan jumlah token yang akan di approve dalam format wei ke dalam kolom `value(uint256)`
 5. Write/eksekusi transaksi
 
 ### Bagian Kirim
-1. Pergi ke kontrak staking WCT [Staking](https://optimistic.etherscan.io/address/0x521b4c065bbdbe3e20b3727340730936912dfa46#writeProxyContract#F4)
+1. Pergi ke kontrak staking WCT `https://optimistic.etherscan.io/address/0x521b4c065bbdbe3e20b3727340730936912dfa46`
 2. Konek wallet setelah itu cari fungsi `4. depositFor(0x2f4f21e2)`
 3. Paste address penerima ke dalam kolom `for_(address)`
 4. Masukkan jumlah token yang akan di kirim/sell dalam format wei ke dalam kolom `amount(uint256)`
